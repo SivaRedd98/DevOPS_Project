@@ -49,7 +49,7 @@ public class LoginFunctionalTest {
         WebElement email = driver.findElement(By.name("email"));
         WebElement pass = driver.findElement(By.name("password"));
         WebElement button = driver.findElement(By.xpath("/html/body/form/div/button"));         
-        email.sendKeys("avinash.patel@wipro.com");
+        email.sendKeys("sivareddy346@gmail.com");
         pass.sendKeys("1234");
         button.click();
         assertTrue(driver.getPageSource().contains("SuccessPage"));
@@ -94,7 +94,7 @@ public class LoginFunctionalTest {
         WebElement button = driver.findElement(By.xpath("/html/body/form/div/button"));      
         pass.sendKeys("1234");
         confirmpass.sendKeys("1234");
-        email.sendKeys("avinash.patel@wipro.com");
+        email.sendKeys("sivareddy346@gmail.com");
         button.click();
         assertTrue(driver.getPageSource().contains("Book Store"));
 	}
